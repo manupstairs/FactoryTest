@@ -10,5 +10,11 @@ namespace FactoryTest
             B1 = b;
             new C(c1, c2);
         }
+
+        public B(string b)
+        {
+            B1 = b;
+            CFactory.CreateC();
+        }
     }
 }

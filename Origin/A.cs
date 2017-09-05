@@ -8,5 +8,10 @@ namespace FactoryTest
         {
             new B(b, c1, c2);
         }
+
+        public A()
+        {
+            BFactory.CreateB();
+        }
     }
 }

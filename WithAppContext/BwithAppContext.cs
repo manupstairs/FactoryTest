@@ -7,8 +7,8 @@ namespace FactoryTest
         private string B1 { get; set; }
         public BwithAppContext(AppContext context)
         {
-            B1 = context.B;
-            new C(context);
+            B1 = context.B1;
+            new CwithAppContext(context);
         }
     }
 }
