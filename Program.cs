@@ -12,7 +12,7 @@ namespace FactoryTest
 
             //use AppContext
             var appContext = new AppContext { B1 = "b", C1 = "c1", C2 = "c2" };
-            var awithAppContext = new AwithAppContext(appContext);
+            var awithAppContext = new A(appContext);
 
             //use factory
             var aByFactory = AFactory.CreateA();

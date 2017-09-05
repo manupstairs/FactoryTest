@@ -11,6 +11,12 @@ namespace FactoryTest
             new C(c1, c2);
         }
 
+        public B(AppContext context)
+        {
+            B1 = context.B1;
+            new C(context);
+        }
+
         public B(string b)
         {
             B1 = b;

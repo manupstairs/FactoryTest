@@ -9,6 +9,11 @@ namespace FactoryTest
             new B(b, c1, c2);
         }
 
+        public A(AppContext context)
+        {
+            new B(context);
+        }
+
         public A()
         {
             BFactory.CreateB();
