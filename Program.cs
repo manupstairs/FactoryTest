@@ -11,7 +11,7 @@ namespace FactoryTest
             Console.WriteLine(a);
 
             //use AppContext
-            var appContext = new AppContext { B1 = "1", C1 = "2", C2 = "3" };
+            var appContext = new AppContext { ParameterInB = "1", Parameter1InC = "2", Parameter2InC = "3" };
             var awithAppContext = new A(appContext);
             Console.WriteLine(awithAppContext);
 

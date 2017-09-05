@@ -6,13 +6,13 @@ namespace FactoryTest
     {
         public static AppContext Instance {get; private set;}
 
-        public string B1 { get; set; }
-        public string C1 { get; set; }
-        public string C2 { get; set; }
+        public string ParameterInB { get; set; }
+        public string Parameter1InC { get; set; }
+        public string Parameter2InC { get; set; }
 
         public static void CreateInstance(string b, string c1, string c2)
         {
-            Instance = new AppContext { B1 = b, C1 = c1, C2 = c2 };
+            Instance = new AppContext { ParameterInB = b, Parameter1InC = c1, Parameter2InC = c2 };
         }
     }
 }
