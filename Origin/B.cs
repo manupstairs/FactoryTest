@@ -7,6 +7,7 @@ namespace FactoryTest
         private string B1 { get; set; }
         public B(string b, string c1, string c2)
         {
+            B1 = b;
             new C(c1, c2);
         }
     }
