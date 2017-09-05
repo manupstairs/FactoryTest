@@ -6,7 +6,8 @@ namespace FactoryTest
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var a = new A("b", "c1", "c2");
+            Console.WriteLine(a);
         }
     }
 }
