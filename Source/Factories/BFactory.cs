@@ -6,7 +6,7 @@ namespace FactoryTest
     {
         public static B CreateB()
         {
-            var b1 = AppContext.Instance().B1;
+            var b1 = AppContext.Instance.B1;
             return new B(b1);
         }
     }

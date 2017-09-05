@@ -4,19 +4,25 @@ namespace FactoryTest
 {
     class A
     {
+        private B b;
         public A(string b, string c1, string c2)
         {
-            new B(b, c1, c2);
+            this.b = new B(b, c1, c2);
         }
 
         public A(AppContext context)
         {
-            new B(context);
+            b = new B(context);
         }
 
         public A()
         {
-            BFactory.CreateB();
+            b = BFactory.CreateB();
+        }
+
+        public override string ToString()
+        {
+            return b.ToString();
         }
     }
 }
